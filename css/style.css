@@ -84,3 +84,44 @@ main{
   color: #fff;
   background-color: #39930d;
 }
+
+@media screen and (max-width: 750px){
+  main{
+    flex-direction: column;
+  }
+  .menu{
+    order: -1;
+  }
+}
+@media screen and (max-width: 600px){
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo{
+    margin-bottom: 25px;
+  }
+  .phones i{
+    text-align: center;
+  }
+  .banner{
+    min-height: 300px;
+    object-fit: cover;
+    object-position: 70%;
+  }
+}
+@media screen and (max-width: 400px){
+  .logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo p{  
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .logo img{
+    padding-left: 0;
+  }
+}
